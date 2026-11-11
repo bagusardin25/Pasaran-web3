@@ -1,0 +1,66 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+.vite/
+coverage/
+coverage.json
+*.tsbuildinfo
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Secrets. Commit .env.example only; real keys stay on the machine.
+.env
+.env.*
+!.env.example
+.envrc
+.env.keys
+.env.vault
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+keystore.json
+secrets.json
+secrets/
+.secret
+mnemonic.txt
+mnemonic.json
+seed-phrase.txt
+seedphrase.txt
+private-key.txt
+private_key.txt
+*private-key.json
+*private_key.json
+
+# Hardhat / Foundry local output. Public-network deployment records are committed on purpose.
+contracts/artifacts/
+contracts/cache/
+contracts/typechain/
+contracts/typechain-types/
+contracts/coverage/
+contracts/ignition/deployments/
+contracts/deployments/localhost.json
+contracts/deployments/hardhat.json
+cache/
+out/
+broadcast/
+lcov.info
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.local
+*.suo
+*.sw?
+
+# Hosting
+.vercel
+.railway
