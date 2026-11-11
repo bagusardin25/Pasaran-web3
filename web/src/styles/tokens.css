@@ -1,0 +1,84 @@
+/*
+  Pasaran design tokens.
+  Direction: a market stall — blue-and-white striped tarp overhead, white card price tags
+  written in heavy condensed figures, one orange marker for the thing to do next.
+  Every text/background pair below was checked for WCAG AA contrast.
+*/
+:root {
+  /* Ground and tags */
+  --canvas: #f5f3ee;
+  --surface: #ffffff; /* price tags */
+  --sunken: #ece8df;
+
+  /* Ink */
+  --ink: #121417;
+  --ink-muted: #4a4f57; /* 7.4:1 on canvas */
+  --ink-faint: #5f656e; /* 5.3:1 on canvas, 4.8:1 on sunken */
+
+  /* Lines */
+  --rule: #dcd6ca; /* decorative dividers */
+  --border-control: #7d766a; /* 4.0:1 on canvas: form boundaries */
+
+  /* Tarp */
+  --tarp: #1b4f9c; /* 7.9:1 with white */
+  --tarp-deep: #133b76;
+  --tarp-pale: #d6e2f5; /* 6.1:1 on tarp */
+  --on-tarp: #ffffff;
+
+  /* Marker */
+  --orange: #f2801d; /* ink on orange 6.9:1; buttons carry an ink edge */
+  --orange-deep: #e06f0c;
+
+  /* Price movement: never colour alone — always an arrow and a figure too */
+  --up: #a8420a; /* dearer */
+  --down: #1b4f9c; /* cheaper */
+
+  /* States */
+  --ok: #1f5e3a;
+  --ok-tint: #ddeedf;
+  --stale: #6b4300;
+  --stale-tint: #f6e7c9;
+  --error: #9e2418;
+  --error-tint: #fbe4df;
+
+  /* Type: one family, two widths */
+  --font: 'Archivo Variable', 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', 'Cascadia Mono', Consolas, monospace;
+  --condensed: 72%;
+  --semi: 88%;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-h3: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --text-h2: clamp(1.6rem, 1.25rem + 1.3vw, 2.25rem);
+  --text-h1: clamp(2.2rem, 1.5rem + 3vw, 3.75rem);
+  --text-price: clamp(1.6rem, 1.3rem + 1vw, 2.1rem);
+  --text-price-xl: clamp(3rem, 2.2rem + 3vw, 5rem);
+
+  /* Space: a 4px scale */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+  --s8: 4rem;
+
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --page-max: 74rem;
+  --measure: 42rem;
+
+  --radius: 4px;
+  --radius-lg: 8px;
+  --tag-shadow: 0 1px 0 var(--rule), 0 10px 24px -18px rgb(18 20 23 / 0.45);
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --fast: 120ms;
+  --medium: 220ms;
+
+  --stripe: 26px; /* awning stripe width */
+}
